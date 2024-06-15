@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    background-color: #f3f3f3;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Urbanist", sans-serif;
+}
+
+
+.zolo-container {
+    display: flow-root;
+    /* 1 */
+    box-sizing: content-box;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  /* demo css start  */
+
+  :root {
+    --zolo-free-color: #06D6A0;
+    --zolo-pro-color: #ff0a77;
+    --zolo-new-color: #115cfa;
+    --zolo-all-color: #673ab7;
+    --zolo-popular-color: #ff7613;
+}
+
+  
+.zolo-blockList-headMenu,
+.zolo-blockList-header,
+.zolo-blockList-headItem .zolo-blockList-headMenu-btn,
+.zolo-blockList-head-Count,
+.zolo-blockList-sideMenu-item .zolo-blockList-sideMenu-btn,
+.zolo-blockList-menu-text,
+.zolo-blockList-sideMenu-Count {
+    display: flex;
+    align-items: center;
+}
+
+.zolo-blockList-header {
+    gap: 20px;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.04);
+    padding: clamp(1rem, 1.5vw, 1.563rem);
+    border-radius: 6px;
+    border-bottom: 1px solid rgba(171, 170, 175, 0.200);
+}
+
+.zolo-blockList-headMenu {
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+}
+
+.zolo-blockList-headItem .zolo-blockList-headMenu-btn {
+    gap: 7px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    padding: 6px 16px;
+    border-radius: 6px;
+    background-color: transparent;
+    transition: color .3s ease, border .3s ease, background .3s  ease;
+}
+
+.zolo-blockList-headItem.all .zolo-blockList-headMenu-btn {
+   color: var(--zolo-all-color);
+   border-color: var(--zolo-all-color);
+}
+
+.zolo-blockList-headItem.all .zolo-blockList-headMenu-btn:hover {
+   background-color: var(--zolo-all-color);
+}
+
+.zolo-blockList-headItem.free .zolo-blockList-headMenu-btn {
+   color: var(--zolo-free-color);
+   border-color: var(--zolo-free-color);
+}
+
+.zolo-blockList-headItem.free .zolo-blockList-headMenu-btn:hover {
+   background-color: var(--zolo-free-color);
+}
+
+.zolo-blockList-headItem.pro .zolo-blockList-headMenu-btn {
+   color: var(--zolo-pro-color);
+   border-color: var(--zolo-pro-color);
+}
+
+.zolo-blockList-headItem.pro .zolo-blockList-headMenu-btn:hover {
+   background-color: var(--zolo-pro-color);
+}
+
+.zolo-blockList-headItem.new .zolo-blockList-headMenu-btn {
+   color: var(--zolo-new-color);
+   border-color: var(--zolo-new-color);
+}
+
+.zolo-blockList-headItem.new .zolo-blockList-headMenu-btn:hover {
+   background-color: var(--zolo-new-color);
+}
+
+.zolo-blockList-headItem.popular .zolo-blockList-headMenu-btn {
+   color: var(--zolo-popular-color);
+   border-color: var(--zolo-popular-color);
+}
+
+.zolo-blockList-headItem.popular .zolo-blockList-headMenu-btn:hover {
+   background-color: var(--zolo-popular-color);
+}
+
+.zolo-blockList-headItem .zolo-blockList-headMenu-btn:hover {
+    color: #fff;
+ }
+
+ .zolo-blockList-headSearch {
+    width: 100%;
+}
+
+.zolo-blockList-headSearch input {
+    padding: 10px 15px;
+    border: 1px solid #e7e7e7;
+    outline: none;
+    border-radius: 6px;
+    font-size: 13px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.zolo-blockList-headSearch input:focus {
+    border-color: transparent;
+    outline: 2px solid blue;
+}
+
+.zolo-blockList-head-Count,
+.zolo-blockList-sideMenu-Count {
+    background-color: rgba(228, 236, 255, 0.49);
+    font-size: 9px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.zolo-blockList-wrap {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    box-sizing: border-box;
+}
+
+.zolo-blockList-sidebar {
+    min-height: 100vh;
+    width: 30%;
+    background-color: #fff;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-right: 1px solid rgba(171, 170, 175, 0.200);
+    display: none;
+}
+
+.zolo-blockList-sideMenu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.zolo-blockList-sideMenu-btn {
+    justify-content: space-between;
+    color: #53535c;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 15px 25px;
+    transition: color .3s ease;
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(171, 170, 175, 0.200);
+    position: relative;
+}
+
+.zolo-blockList-sideMenu-item:nth-last-child(1) .zolo-blockList-sideMenu-btn {
+    border: 0;
+}
+
+.zolo-blockList-sideMenu-item.active .zolo-blockList-sideMenu-btn::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background-color: #115cfa;
+}
+
+.zolo-blockList-sideMenu-btn:hover {
+    color: #000;
+}
+
+.zolo-blockList-menu-text {
+    gap: 8px;
+    flex-direction: row-reverse;
+}
+
+.zolo-blockList-menu-text svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+    fill: currentColor;
+}
+
+.zolo-blockList-icon {
+    background-color: rgba(228,236,255,1);
+}
+
+.zolo-blockList-grid-wrap {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+.zolo-blockList-inner-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.zolo-blockList-item {
+    background-color: rgba(255,255,255,1);
+    border-radius: 20px;
+    box-shadow: #7d7d7d14 10px 10px 40px 0px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: transform .3s ease;
+}
+
+.zolo-blockList-content {
+    padding: 20px;
+}
+
+.zolo-blockList-title {
+    margin: 0 0 6px;
+    font-size: 19px;
+    font-weight: 700;
+    color: #27252f;
+    transition: color .3s ease;
+}
+
+.zolo-blockList-subtitle {
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #66656f;
+}
+
+.zolo-blockList-item:hover .zolo-blockList-title {
+    color: #115cfa;
+}
+
+.zolo-blockList-item:hover {
+    transform: translateY(-5px);
+}
+
+@media(min-width: 768px) {
+    .zolo-blockList-inner-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .zolo-blockList-headMenu {
+        display: flex;
+    }
+    .zolo-blockList-headSearch,
+    .zolo-blockList-headSearch input{
+        width: auto;
+    }
+}
+@media(min-width: 1024px) {
+    .zolo-blockList-sidebar {
+        display: block;
+    }
+    .zolo-blockList-inner-grid {
+        gap: 30px;
+    }
+    .zolo-blockList-header {
+        border-bottom-left-radius: 0;
+    }
+}
