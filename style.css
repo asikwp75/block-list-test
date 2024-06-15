@@ -30,6 +30,7 @@ h1,h2,h3,h4,h5,h6 {
   /* demo css start  */
 
   :root {
+    --hello : #000;
     --zolo-as: #f00ccc;
     --zolo-free-color: #06D6A0;
     --zolo-pro-color: #ff0a77;
