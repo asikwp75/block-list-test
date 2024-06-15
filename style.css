@@ -10,6 +10,7 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
   font-family: "Urbanist", sans-serif;
+
 }
 
 
@@ -29,6 +30,7 @@ h1,h2,h3,h4,h5,h6 {
   /* demo css start  */
 
   :root {
+    --zolo-as: #f00;
     --zolo-free-color: #06D6A0;
     --zolo-pro-color: #ff0a77;
     --zolo-new-color: #115cfa;
